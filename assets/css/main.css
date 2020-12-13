@@ -1,0 +1,241 @@
+/* UTILITY */
+
+/* Lobster font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Merriweather font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+/* Asap font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+/* Popins font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.bg-success {
+    background-color: #04C37E!important;
+}
+
+.bg-light {
+    background-color: #EFFBF7;
+}
+
+.text-success {
+    color: #0AC480!important;
+}
+
+.btn-success {
+    background-color: #0AC480;
+    border-color: transparent;
+}
+
+.btn-success:hover {
+    background-color: #0CA56D;
+    border-color: transparent;
+}
+
+.btn-success:active, .btn-success:focus {
+    background-color: #0AC480!important;
+    border-color: transparent!important;
+    box-shadow: none !important;
+}
+
+.btn-outline-success {
+    border-color: #0AC480;
+}
+
+.btn-outline-success:hover {
+    background-color: #0AC480;
+}
+
+.border-success {
+    border-color: #0CA56D;
+}
+
+.border-dashed {
+    border-style: dashed;
+}
+
+.shadow-hover-lg {
+    transition: 1s;
+}
+
+.shadow-hover-lg:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)!important
+}
+
+/* For mobile preview */
+
+/* Navbar */
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+/* Section 1 */
+
+.section-1 {
+    background-color: #FAFAFA;
+}
+
+.section-1 .greating {
+    font-family: 'Merriweather', serif;
+}
+
+.section-1 .title {
+    font-family: 'Lobster', cursive;
+}
+
+.section-1 .subtitle {
+    font-family: 'Asap', sans-serif;
+}
+
+.section-1 .description {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-1 .jumbotron-fluid {
+    background-color: transparent;
+}
+
+/* Section 2 */
+
+.section-2 .title {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.section-2 .subtitle, .section-2 .description {
+    font-family: 'Poppins', sans-serif;
+    /*font-size: 24px; */
+    line-height: 2;
+}
+
+/* Section 3,4,5   */
+
+.section-3 .subtitle, .section-4 .subtitle, .section-5 .subtitle {
+    font-size: 16px;
+    font-family: 'Asap', sans-serif;
+}
+
+.section-3 .title, .section-4 .title, .section-5 .title {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+}
+
+/* Section 3  */
+
+.section-3 .card {
+    opacity: 0;
+    background-image: url('../images/bg_skill.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Asap', sans-serif;
+    transition: 1s;
+    transform: translate(0px, -50px);
+}
+
+.section-3 .card h5 {
+    font-size: 10pt;
+    color: teal;
+    font-weight: bold;
+}
+
+.section-3 .card.show-card, .section-4 .card.show-card, .section-5 .card.show-card {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Section 4 */
+
+.section-4 .card, .section-5 .card {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0px, -50px);
+}
+
+.section-4 .card {
+    position: relative;
+}
+
+.section-4 .tools {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(12, 165, 109, .5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+    font-size: 10pt;
+    font-family: 'Asap', sans-serif;
+}
+
+.section-4 .tools:hover {
+    background-color: rgba(12, 165, 109, 1);
+}
+
+.show-tools {
+    opacity: 1!important;
+}
+
+/* Section 5 */
+
+.section-5 .card {
+    border-radius: 5px;
+}
+
+.section-5 .certificate-title {
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-5 .certificate-date {
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+}
+
+.section-5 .certificate-description {
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+}
+
+.section-5 .certificate-detail {
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+}
+
+footer {
+    font-family: 'Asap', sans-serif;
+    font-size: 10pt;
+}
+
+/* For laptop preview */
+
+@media only screen and (min-width: 775px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 70%;
+    }
+    .section-1 .jumbotron {
+        background-image: url('../images/header_ilustrator.png');
+        background-size: 500px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 80% 40%;
+    }
+    .section-1 .jumbotron .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
