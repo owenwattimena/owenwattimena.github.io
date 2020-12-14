@@ -37,9 +37,7 @@ $(document).ready(function () {
             });
         }
 
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
+
         //// My Certificate Animation
         if (wScroll > $('.section-5').offset().top - 250) {
             $('.section-5 .card').each(function (index) {
@@ -61,8 +59,22 @@ $(document).ready(function () {
     });
 
     lightbox.option({
-        // 'resizeDuration': 200,
-        // 'wrapAround': true,
         'disableScrolling': true
+    });
+
+    $(window).on('scroll', function () {
+        yAxis = this.scrollY
+        if (yAxis >= 273) {
+            $('.btn-scroll-up').removeClass('hide-btn-scroll-up');
+        }
+        else {
+            $('.btn-scroll-up').addClass('hide-btn-scroll-up');
+        }
     })
+
+    $('#btn-scroll-up').click(function () {
+        $('html').animate({
+            scrollTop: $('html').offset().top
+        }, 1000);
+    });
 });
